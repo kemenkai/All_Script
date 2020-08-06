@@ -1,0 +1,9 @@
+Win目录创建软连接
+mklink /D D:\ClientUpdate\Xfgf_Test\ C:\Users\KnTest\AppData\Local\Jenkins.jenkins\workspace\XFGF_Client\Test_Update_XFGF_Client
+mklink /D C:\Users\KnTest\AppData\Local\Jenkins.jenkins\workspace\XFGF_Client\xfgf_Client_Rollback C:\Users\KnTest\AppData\Local\Jenkins.jenkins\workspace\XFGF_Client\Test_Update_XFGF_Client
+
+
+
+# Win命令行添加防火墙规则
+netsh advfirewall firewall add rule name=BlockRTX dir=in protocol=tcp localport=8000 action=block enable=yes remoteip=192.168.5.2
+netsh advfirewall firewall add rule name=allow-80    dir=in protocol=tcp localport=80    action=allow enable=yes    
